@@ -1,0 +1,10 @@
+// Notas
+
+tener en cuenta que definir variables y despues en otro sector asignar valor
+es una buena practica, ej:
+
+var nombre;
+
+nombre = prompt("Ingrese su nombre","Nombre...")
+
+definicion de variables en JS -> buena practica lower camel case nombreIngresado
