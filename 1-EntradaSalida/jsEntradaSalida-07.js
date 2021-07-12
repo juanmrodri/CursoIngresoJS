@@ -22,7 +22,7 @@ function sumar()
 
 
 	mensaje="La suma es: "+sumar;
-	
+
 
 	alert(mensaje);
 
