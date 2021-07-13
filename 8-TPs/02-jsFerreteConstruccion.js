@@ -44,7 +44,7 @@ function Circulo ()
 
     radio=radio*radio;
 
-    pi=3,14;
+    pi=3.14;
 
     resultado=pi*radio
     
