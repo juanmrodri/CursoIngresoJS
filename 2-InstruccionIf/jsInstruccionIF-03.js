@@ -1,3 +1,7 @@
+/*
+autor: Juan Manuel Rodriguez
+ejercicio: Instrucción IF 03
+*/
 function mostrar()
 {
 	//tomo la edad  
