@@ -12,5 +12,3 @@ definicion de variables en JS -> buena practica lower camel case nombreIngresado
 nuestro if lo unico que detecta es un 0, que es un alias de false
 
 los operadores de comparacion que mas vamos a usar son == y !=
-
-	ñ
