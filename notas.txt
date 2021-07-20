@@ -1,0 +1,72 @@
+// Notas
+
+tener en cuenta que definir variables y despues en otro sector asignar valor
+es una buena practica, ej:
+
+var nombre;
+
+nombre = prompt("Ingrese su nombre","Nombre...")
+
+definicion de variables en JS -> buena practica lower camel case nombreIngresado
+
+nuestro if lo unico que detecta es un 0, que es un alias de false
+
+los operadores de comparacion que mas vamos a usar son == y !=
+
+// switch - estructura de selección multiple
+
+// evalúa: enteros - caracteres sueltos - (esto es exclusivo de javaScript) cadenas de caracteres
+el switch recibe como parametro un valor y por comparación implicita de igualdad el switch establece una serie de casos que se van a comparar, nota de color: 255 es el límite de casos
+el break corta la continuación del los siguientes casos, en el momento que se cumple la igualdad
+el caso default es donde se mete el switch cuando no se cumple ningun caso
+
+si saco los breaks puedo agrupar casos 
+
+case "":
+case "":
+    mensaje="aca puede pasar algo";
+break;
+
+siempre que hay un default y en un if un else, hay que cuestionarse si se puede sacar realmente
+
+tp 4
+
+con switch
+con switch y el if
+
+
+while
+
+siempre son 3 pasos
+
+var edad;
+	edad=15; // 1. este es el paso 1
+
+	while(edad<18) // 2. este es el paso 2
+	{
+		console.log("No es mayor a 18"); // 3. este es el paso 3
+	}
+
+hay 3 formas de romper un while
+una es no entrar nunca
+
+la otra es no salir nunca
+
+y la otra es anularlo con el ;
+
+// ej 1 while
+
+function mostrar()
+{
+	var edad;
+	edad=15; // 1. este es el punto 1
+
+	while(edad<18) // 2. este es el punto 2
+	{
+		
+		edad=prompt("Ingrese la edad."); // 3. este es el punto 3
+		edad=parseInt(edad);
+		console.log(edad);
+	}
+
+}//FIN DE LA FUNCIÓN
