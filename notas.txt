@@ -36,7 +36,7 @@ con switch y el if
 
 
 while
-
+    
 siempre son 3 pasos
 
 var edad;

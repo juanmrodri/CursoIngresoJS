@@ -10,7 +10,7 @@ function mostrar()
 	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
 	numeroIngresado=parseInt(numeroIngresado);
 
-	while(numeroIngresado<10)
+	while(numeroIngresado<0 || numeroIngresado>10) // tener en cuenta la doble validacion entre 0 y 9 ENTRE
 	{
 		numeroIngresado = prompt("ingrese un número entre 0 y 10.");
 	}

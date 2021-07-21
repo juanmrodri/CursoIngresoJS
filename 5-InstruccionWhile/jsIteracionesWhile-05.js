@@ -9,8 +9,8 @@ function mostrar()
 	var sexoIngresado;
 
 	sexoIngresado = prompt("ingrese f ó m .");
-
-	while(sexoIngresado!=="m" && sexoIngresado!=="f")
+	// while(!(sexoIngresado=="m" && sexoIngresado=="f")) esto esta bien tambien pero no es recomendable, negamos todo
+	while(sexoIngresado!="m" && sexoIngresado!="f")
 	{
 		
 		sexoIngresado = prompt("ingrese f ó m .");
