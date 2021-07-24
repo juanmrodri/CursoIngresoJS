@@ -2,6 +2,8 @@
 autor: Juan Manuel Rodriguez
 ejercicio: iteraciones while 09
 
+OTRA FORMA PARA ACOTAR EL Y OPTIMIZAR EL CODIGO
+
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
@@ -17,26 +19,22 @@ function mostrar()
 	while(respuesta=="si")
 	{
 		numeroIngresado=prompt("Ingrese un número por favor.");
-		numeroIngresado=parseInt(numeroIngresado);
-		if(banderaDelPrimero=="es el primero")
-		{
-			banderaDelPrimero="otro"; // lo primero que hacemos es cambiar la bandera
-			numeroMinimo=numeroIngresado;
-			numeroMaximo=numeroIngresado;
-			
-		} else {
-			if(numeroIngresado>numeroMaximo)
-			{
-				numeroMaximo=numeroIngresado;
-			} else
-			{
-				if(numeroIngresado<numeroMinimo) // este if debe ir ya que que no sea el maximo no significa que sea el minimo, ya que puede ser igual
-				{
-					numeroMinimo=numeroIngresado;
-				}
-			}
-		}
-		respuesta=prompt("desea continuar?");
+        numeroIngresado=parseInt(numeroIngresado);
+
+        // es necesario preguntar por separado
+        if(numeroIngresado<numeroMinimo || respuesta=="si")
+        {
+            numeroMinimo=numeroIngresado;
+        }
+
+        if(numeroIngresado>numeroMaximo || respuesta=="si")
+        {
+            numeroMaximo=numeroIngresado;
+            respuesta="no";
+        }
+
+        respuesta=prompt("Desea continuar?");
+
 	}
 
 	document.getElementById("txtIdMaximo").value=numeroMaximo;
